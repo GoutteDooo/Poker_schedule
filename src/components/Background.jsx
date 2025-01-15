@@ -1,7 +1,11 @@
 import React from "react";
 
 const Background = () => {
-  return <div>BG</div>;
+  return (
+    <div className="background">
+      <div className="blur"></div>
+    </div>
+  );
 };
 
 export default Background;
