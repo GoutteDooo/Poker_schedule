@@ -1,5 +1,5 @@
 import React from "react";
-import "./styless/main.scss";
+import "./styles/main.scss";
 import Background from "./components/Background";
 import Entete from "./components/Entete";
 import Logo from "./components/Logo";
