@@ -1,12 +1,13 @@
 .background {
   position: absolute;
   height: 3508px;
-  width: 2480px;
-  top: 30px;
-  left: 30px;
-  outline: 15px dashed goldenrod;
-  outline-offset: -1rem;
+  width: 2880px;
+  top: 0px;
+  left: 0px;
+  outline: 15px solid goldenrod;
+  outline-offset: -0.5rem;
   border-radius: 150px;
+  z-index: -1;
   .blur {
     filter: blur(10px) brightness(0.5);
     width: 100%;
@@ -15,9 +16,9 @@
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 100px;
+    border-radius: 1.5rem;
     /* IMAGE */
-    background-image: url(images/bg.jpg);
+    // background-image: url(images/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 25%;
