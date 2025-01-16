@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); //Oswald
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"); //Oswald
 .affiche-semaine {
-  height: 3508px;
+  height: 3708px;
   width: 2880px;
   color: black;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding: 1.5rem 1rem;
+  padding: 1.2rem 1rem;
   box-sizing: border-box;
   font-weight: bold;
   font-family: Oswald;
@@ -29,12 +29,12 @@
       }
     }
     #logo {
-        background-image: url(/images/logo.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 0 -10px;
-        width: 1400px;
-        height: 4rem;
+      background-image: url(/images/logo.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 -10px;
+      width: 1400px;
+      height: 4rem;
     }
   }
   main {
@@ -67,7 +67,12 @@
           width: 20%;
           text-align: center;
           font-weight: bold;
-          background-image: linear-gradient(272deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+          background-image: linear-gradient(
+            272deg,
+            #ff3cac 0%,
+            #784ba0 50%,
+            #2b86c5 100%
+          );
           color: transparent;
           background-clip: text;
         }
@@ -96,14 +101,18 @@
             }
             &__cost {
               margin-left: auto;
-              background-color: #FF3CAC;
-              background-image: linear-gradient(272deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+              background-color: #ff3cac;
+              background-image: linear-gradient(
+                272deg,
+                #ff3cac 0%,
+                #784ba0 50%,
+                #2b86c5 100%
+              );
               height: 100%;
               width: 2.5rem;
               @include verticalCenter;
               border-radius: 500px;
               color: whitesmoke;
-              
             }
           }
         }
@@ -135,5 +144,58 @@
   footer {
     height: 15%;
     width: 100%;
+    .contacts {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      &__deco {
+        height: 100%;
+        width: 20%;
+      }
+      &__container {
+        display: flex;
+        align-items: center;
+        .contacts__adresse {
+          display: flex;
+          img {
+            height: 23%;
+            width: 23%;
+          }
+          &--texts {
+            margin-left: 0.3rem;
+            margin-right: 0.3rem;
+            width: 100%;
+            p {
+              font-weight: normal;
+              font-size: 0.55rem;
+              color: grey;
+            }
+            strong {
+              font-size: 0.7rem;
+            }
+          }
+        }
+        .contacts__net {
+          display: flex;
+          align-items: center;
+          svg {
+            color: grey;
+          }
+          span {
+            margin-left: 0.5rem;
+            font-size: 0.7rem;
+          }
+        }
+      }
+      &__deco {
+        background-image: url(/images/deco.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        &:nth-child(3) {
+          transform: scaleX(-1);
+        }
+      }
+    }
   }
 }
